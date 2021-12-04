@@ -1,0 +1,118 @@
+.heading{
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+body{
+    background-image:url('./media/cork-wallet.png');
+}
+.card2 img{
+    width:200px;
+    height:200px;
+}
+
+.mainbox{
+    margin: 0px 2px 0px 2px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+}
+
+#nav{
+    text-align: center;
+    position:relative;
+    top:0px;
+    z-index:2;
+    width:100%;
+    max-width: 780px;
+}
+#nav a{
+    text-decoration:none; 
+    color:inherit;
+}
+#nav a:hover{
+    border-bottom: black solid 1px;
+    cursor: pointer;
+}
+.projectbox{
+    display:flex;
+    flex-wrap:wrap;
+justify-content: center;
+
+}
+.projectitem{
+    width:350px;
+    height:300px;
+    border:black solid 1px;
+}
+.projectphoto{
+    width:300px;
+    height:200px;
+}
+.content{
+    display:flex;
+    text-align: left;
+    flex-wrap: wrap;
+    width:100%;
+    max-width: 800px;
+    justify-content: center;
+}
+.sep{
+    text-align: center;
+    color:black;
+    background:rgba(255,255,255,0.5);
+    margin: 10px 10px 10px 10px;
+    width:100%;
+    border:black solid 1px;
+
+}
+.card{
+    text-align: center;
+    color:black;
+    padding-top:5px;
+    padding-bottom:5px;
+    background:rgba(255,255,255,0.5);
+    margin: 10px 5px 10px 5px;
+    width:100%;sheet" href="../layouts/css/main.css">
+  <!-- Favicon
+    min-width: 440;
+    border:black solid 1px;
+
+}
+.card1{
+    cursor: pointer;
+    text-align: center;
+    color:black;
+    padding-top:5px;
+    padding-bottom:5px;
+    background:rgba(255,255,255,0.5);
+    margin: 10px 5px 10px 5px;
+    width:100%;
+    min-width: 440;
+    border:black solid 1px;
+
+}
+.card2{
+    cursor: pointer;
+    text-align: center;
+    color:black;
+    padding-top:5px;
+    padding-bottom:5px;
+    background:rgba(255,255,255,0.5);
+    margin: 10px 5px 10px 5px;
+    width:370px;
+    min-width: 440;
+    border:black solid 1px;
+}
+.card1:hover{
+    background:white !important;
+}
+.card2:hover{
+    background:white !important;
+}
+@media only screen and (max-width: 600px) {
+    #nav{
+        display:block;
+    }
+}

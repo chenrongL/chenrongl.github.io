@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Chen's Blog</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="brain.jpg">
+  <style>
+    canvas{
+        width:400px;
+        height:400px;
+        border:black solid 1px;
+        background:black;
+    }
+    </style>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="mainbox" style="padding:20px">
+       
+      
+<button onclick="document.location='/animations/1.html'"> Back to home</button>
+<h1>Barnsley's leaf and Sierpinski gasket</h1>
+
+<pre>Select a color and the amount of points drawn at a time.
+  then click either draw fern or drawn triangle many many times
+  to draw.
+</pre>
+<div class="controls">
+Color:
+<select id="color_choice">
+    <option>White</option>
+    <option>Green</option>
+    <option>Red</option>
+    <option>Yellow</option>
+    <option>Blue</option>
+</select> 
+Step Size:
+<select id="step_size">
+    <option>1</option>
+    <option>10</option>
+    <option>100</option>
+    <option>1000</option>
+    <option>10000</option>
+</select>
+<select id="speed">
+  <option value="slow">Slow</option>
+  <option value="medium">Medium</option>
+  <option value="fast">Fast</option>
+ </select>
+
+<button onclick="clear_canvas()">Reset</button><br>
+Pattern:
+<select id="pattern">
+  <option value="fern">Fern</option>
+  <option value="triangle">Triangle</option>
+</select> 
+<button onclick="draw_pattern()">Draw</button>
+<button onclick="auto_draw()">Auto Draw</button>
+<button onclick="stop()">Stop</button>
+    </div>
+<canvas id="canvas"></canvas>
+
+
+
+</body>
+</html>
+
+<script>
+  var canvas = document.getElementById("canvas");
+  var ctx = canvas.getContext("2d");
+  var color_choice = document.getElementById('color_choice');
+  var step_size = document.getElementById('step_size');
+  var pattern = document.getElementById('pattern');
+  var speed = document.getElementById('speed');
+  ctx.canvas.width = 600;
+  ctx.canvas.height = 600;
+  ctx.fillStyle = "black";
+  var lastx = 100;
+  var lasty = 100;
+  var newx = 0;
+  var newy = 0;
+  var idx = 0;
+  var animation_delay = 500;
+  var drawing = false;
+  function stop(){
+    drawing = false;  
+  }
+  function auto_draw(){
+    drawing= true;
+    var speed_choice = speed.options[speed.selectedIndex].value;
+    if(speed_choice=="slow"){
+      animation_delay = 1000;
+    }else if(speed_choice=="medium"){
+      animation_delay = 500;
+    }else if(speed_choice=="fast"){
+      animation_delay = 100;
+    }
+    setInterval(function(){
+      if(drawing){
+      draw_pattern();
+      }
+    }, animation_delay);
+  }
+function draw_pattern(){
+  var pattern_choice = pattern.options[pattern.selectedIndex].value;
+  if(pattern_choice=="fern"){
+      draw_fern();
+  }else if(pattern_choice=="triangle"){
+      draw_triangle();
+  }
+}
+  function draw_triangle(){
+      var draw_amount = parseInt(step_size.options[step_size.selectedIndex].text);
+      for(i=0;i<draw_amount;i++){   
+          draw(Math.floor(lastx),Math.floor(lasty));  
+          randompoint = choose(
+              [[50,500],[300,100],[500,500]]
+          );
+          newx = (randompoint[0] + lastx)/2;
+          newy = (randompoint[1] + lasty)/2;
+          lastx = newx;
+          lasty = newy;
+      }
+  }
+  function clear_canvas(){
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      lastx = 0;
+      lasty = 0;
+      newx = 0;
+      newy = 0;
+  }
+  function draw_fern(){
+      var draw_amount = parseInt(step_size.options[step_size.selectedIndex].text);
+      for(i=0;i<draw_amount;i++){
+          draw(Math.floor(lastx*80+250),-Math.floor(lasty*55-580));
+          randomtransform = Math.random();
+          if(randomtransform<0.85){
+              newx = lastx* 0.85+ lasty*0.04 ;
+              newy = lastx* -0.04 + lasty* 0.85 + 1.6;
+          }else if(randomtransform>=0.85 && randomtransform<0.92){
+              newx = lastx* -0.15 + lasty*0.28;
+              newy = lastx* 0.26 + lasty*0.24 + 0.44;
+          }else if(randomtransform>=0.92 && randomtransform<0.99){
+              newx = lastx*0.2 + lasty*-0.26;
+              newy = lastx*0.23 + lasty*0.22 + 1.6;
+          }else if(randomtransform>0.99){
+              newx = 0;
+              newy = lasty*0.16
+          }
+          lastx = newx;
+          lasty = newy;
+      }
+  }
+  
+  
+  
+  function draw(x,y){
+      ctx.fillStyle = color_choice.options[color_choice.selectedIndex].text;
+      ctx.fillRect(x,y,1,1); // fill in the pixel at (10,10)
+  }
+ 
+  function choose(choices) {
+      var index = Math.floor(Math.random() * choices.length);
+      return choices[index];
+  }
+
+  </script>

@@ -1,0 +1,250 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<header>
+<!-- Header -->
+  <div class="cover">
+<div class="nav">
+  <h1>晨(Chen)</h1>
+  <p class="right mt-3">Last updated : 5/12/2021</p>
+  </div>
+  </div>
+  
+  <!-- Navigation -->
+  <div class="nav-menu">
+  <a href="./index.html">Blog</a>  
+  <a href="./animations.html">Animations</a>
+  <a class="active" href="./portfolio.html">portfolio & CV</a>
+  <a href="./about.html">About</a>
+  <div class="right top-search">
+  <input class="smooth-borders-full">
+    <svg id="search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+  </div>
+  </div>
+  <hr>
+</header>
+
+<div class="body">
+  <!--////////////////////////////////////-->
+  <!--Search
+  <div class="search">
+    <h1>News</h1>
+  <p></p>    
+  </div>-->
+  <!--////////////////////////////////////-->
+  <!-- Content -->
+  <div class="content">
+
+  <!--####Example Post-->
+    <div class="post-full smooth-borders">
+
+
+    <!--CV-->
+    <!--HEADER-->
+    <div id="c-nav" class="post-nav">
+      <h2>Curriculum Vitae</h2>  <button onclick="toggleSection('c',this)" class="smooth-borders-full button" style="position:absolute;right:0px; font-size:20px;margin-top:12px;">Expand Section &nbsp;&nbsp;&nbsp;
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+      </button>
+    </div>  
+    <!--CONTENT-->
+    <div id="c-content" style="display:none;">
+      <div id='portfolio' class="portfolio">
+
+        <strong><a href="./CV2020.pdf">Download PDF CV</a></strong>
+  
+        <p class="grey p-section">
+        I am currently doing an honours year study at Auckland University, New Zealand.<br><br>
+        I have around 4 years of programming experience.<br><br>
+        I mostly program in Python, C++, Java, Javascript/Typescript, css/html.<br><br>        
+        My main research interest is in practical theory for deep learning.<br><br>
+        I have 3 years of experience with developing deep learning models.<br><br>
+        I can learn quickly and I like to develop tools to make my work efficient.
+        </p>
+
+        <strong class="a">Summer Student Research - Otago University Physics Department- 2018 Summer</strong>
+        <p id='s0' class="grey truncate-readmore p-section">
+        I wrote a data manipulation tool for helping a researcher study the dynamics of climate simulations.The tool was to
+        be used to slice some Tera bytes of data according to certain criterias so she could 'zoom in'
+        to different parts of the simulation to see what is going on.<br><br>
+
+        This experience gave me more confidence in being able to write programs, and, in general confidence
+        in my own ability to learn. I also learned a bit more about how science works, and what scientists do.
+        <br><br>
+        </p>
+
+        
+        <strong class="a">Iris Datascience Internship - Early 2019</strong>
+        <p id='s1' class="grey truncate-readmore p-section">
+        I worked for a statistics consulting company as an intern working on some machine learning projects.
+        <br><br>
+        My first task was to adjust some data so they could be used for training machine learning models.
+        I was expected to do this by hand but I wrote python scripts to automate it. 
+        <br><br>
+        I worked on paddock quality prediction from images, apple yield prediction from certain variables,
+        and sheep face detection. <br><br>
+        During this time I learned to write computer programs better and had a deeper understanding of deep learning after
+        practical experimentations. I learnt a lot from Benoit, including the gradient boosting
+        technique.
+        I was offered to go back to work for the same company then and there for the company during the year.
+        </p>
+
+        <strong class="s">Aule Limited - Dunedin NZ - 2020</strong>
+        <p id='s2' class="grey truncate-readmore p-section">
+        I wanted some change, so I started working for a company developing web applications for a year.<br>
+
+        During this time I worked with three other colleagues and I was mainly responsible for the 'front-end'
+        developments, integrating to various endpoints with the database server. <br>
+
+        I began developing a tool to automate certain aspects of development,<br>
+        essentially being able to create templates that are suited to our needs to make forms, list view pages
+        etc much quicker. 
+        <br><br>
+        <br>
+        </p>
+        
+        <strong class="s">'Resistance' Climbing Gym Software - Early 2021</strong>
+        <p id='s3'class="grey truncate-readmore p-section">
+        I was commissioned to build a full featured climbing gym management 
+        software with Angular frame work + Flask. The software has now been used for almost one year in 
+        Resistance Rock Climbing Gym, Dunedin, NZ. I built the software on my spare time while having a full time
+        internship at Soul Machines.<br><br>
+
+        You can see an early demo with the software here: <button onclick="document.location='https://www.youtube.com/watch?v=DRsP95XWMsk'">Link</button>
+        <br><br>
+        In addition, there is also an online waiver signing station which accompanies the software.
+        <button onclick="document.location='https://resistance-waiver-station.netlify.app/'">Link</button>
+
+        <br><br>
+        This experience taught me a lot about software engineering and project management.
+        <br>
+        </p>
+
+        
+        <strong class="a"> Soul Machines Internship - Early 2021</strong>
+          <p id='s4'class="grey truncate-readmore p-section">
+            I worked on automatic animation of 3D human gestures at the company Soul Machines. Specifically, I created a prototype system for 
+            automatic pointing animations. So given a target point, the skeleton would animate so to point to that point.<br><br>
+
+            Initially, people had been uploading files into auto desk maya to specify and visualize trajectories. I wrote a python script
+            to do this automatically through TCP/IP sockets. But auto desk does not run their python scripts multi-threaded so if there was some
+            trouble it will freeze, and things cannot be paused mid-way. So I wrote another visualizer based on Three.js that supports
+            multiple skeletons asynchrnously.<button onclick="document.location='https://www.youtube.com/watch?v=JU7bzOUU6Qc&feature=youtu.be'">Visualizer</button>
+
+            In the end of my internship I worked on understanding a recent paper called "Robust Motion Inbetweening". I did not implement it myself,
+            but I had a solid understanding of the method and was able to modify it to our needs. <br><br>
+
+            During this experience I learnt a lot on computer graphics, how artists work together with programmers to create things,
+            and I also gained a deeper understanding of machine learning, modeling, and deep learning in general through more practical experiments.
+            <br><br>
+
+            I was offered after the internship a 4 days a week semi full time position, but I didn't accept it, and went back to university to do
+            an honours year.
+            <br>
+          </p>
+      </div>    
+      </div>
+      <!--CV-Content End-->
+
+    <!--=============================================================================================================================================================-->
+    <!--A-Content-->
+
+    <!--HEADER-->
+    <div id="a-nav" class="post-nav">
+      <h2>Portfolio</h2>  <button onclick="toggleSection('a',this)"class="smooth-borders-full button" style="position:absolute;right:0px; font-size:20px;margin-top:12px;">Expand Section &nbsp;&nbsp;&nbsp;
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+      </button>
+    </div>  
+    <!--CONTENT-->
+    <div id="a-content" style="display:none;">
+      <div id='portfolio' class="portfolio p-section">
+
+
+      
+      <strong class="a">Automatic 2D Facial Animation From Text And Single Photo</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=RfOZJ1IP9PM&t=271s'">Link to Demo Video1</button>
+      <button class="smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=UrimMxBSmzc'">Link to Demo Video2</button>
+      <button class="smooth-borders-full button" onclick="document.location='chatbotAvatar2.pdf'">View Report</button>
+      <br><br>
+      <strong class="a">Automatic Pointing Gesture Animation For Virtual Human Skeleton</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="smooth-borders-full button" onclick="document.location='SM_Presentation.pdf'">View Report Presentation</button>
+      <br><br>
+      <strong class="a">Fake Make, Simple Multithreaded Make(C++)</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="smooth-borders-full button" onclick="document.location='https://github.com/IpsumDominum/FakeMake'">Link to Project</button>
+      <br><br>
+      <strong class="a">Implementing the Neural Evolution via Augmenting Topologies(NEAT) Algorithm</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="smooth-borders-full button" onclick="document.location='https://github.com/IpsumDominum/Evolutionary-Algorithms/blob/master/NEAT/NEAT.py'">Link to Project</button>
+      <br><br>
+      <strong class="a">Implementing the Wave Function Collapse Algorithm</strong>  &nbsp;&nbsp;&nbsp;&nbsp;  
+      <button class="smooth-borders-full button" onclick="document.location='https://github.com/IpsumDominum/Wave-Function-Collapse-'">Link to Project</button>
+      <button class="smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=GeBI9Bvo9oM'">Link to Demo Video</button>
+      <button class="smooth-borders-full button" onclick="document.location='./Final_Report_COMPSCI715.pdf'">View Report</button>
+      <br><br>
+      <strong class="a">Font Style Transfer For Historical Document Recognition</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="smooth-borders-full button" onclick="document.location='https://github.com/IpsumDominum/Is-Font-Style-Transfer-All-You-Need-For-Historical-Document-Recognition-'">Link to Project</button>
+      <button class="smooth-borders-full button" onclick="document.location='Font_Style_Transfer_Is_All_You_Need__Copy_.pdf'">View Report</button>
+      <br><br>
+
+      
+
+      </div>    
+      </div>
+      <!--A-Content End-->
+    
+    <!--HEADER-->
+    <div id="t-nav" class="post-nav">
+      <h2>Testimonials</h2>  <button onclick="toggleSection('t',this)"class="smooth-borders-full button" style="position:absolute;right:0px; font-size:20px;margin-top:12px;">Expand Section &nbsp;&nbsp;&nbsp;
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+      </button>
+    </div>  
+    <!--CONTENT-->
+    <div id="t-content" style="display:none;">
+      <div id='portfolio' class="portfolio">
+        <strong class="a">Pavel Sumetc - Supervisor at Soul Machines. PHD Mathematics</strong>
+          <p class="grey">
+              "Very quick learner. Extremely good at python."
+          </p>
+        <strong class="a">Brendan Mccane - Head of Department - Otago Computer Science</strong>
+          <p class="grey">
+              "Haven't seen a student like this..."
+          </p>
+        <strong class="s">Mike Simpson - Co-Owner of Resistance Climbing Gym</strong>
+          <p class="grey">
+              "...a very good programmer. The software is working really good."
+          </p>
+        
+      </div>    
+      </div>
+      <!--A-Content End-->
+
+
+
+    </div>
+  </div>  
+  <!--////////////////////////////////////-->
+  <script src="./js/main.js"></script>
+</div>
+
+</html>
+
+

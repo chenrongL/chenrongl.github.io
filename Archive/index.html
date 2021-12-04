@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Chen's Blog</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../brain.jpg">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+<div class="heading" >
+<h1>Chen's<strong style="color:dimgrey">Blog</strong></h1>
+  <label id="quote"></label>
+</div>
+<div class="mainbox">
+<div class="content">
+<div id="nav" >
+    <a><strong>Blog</strong></a> |
+   <a href="/poetry/1.html">Poetry</a> | 
+    <a href="/animations/1.html">Animations</a> | 
+    <a href="about.html">About</a>
+</div>
+     <div class="sep">
+    </div>
+<div class="card1">
+    Why study representations?
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<script src='js/script.js'>
+ </script>
+
+<script>
+var quotes = [  "凡學者、 大義為先， 物名為復 。大義舉而物名從之",
+                "治学不为媚时语，独寻真知启后人",
+                "在最近这两个破烂的世纪里，生活本身已经变得多么孱弱呀，<br>我们哪里还能碰到一个纯真的，有独创性的人呢？"]
+var index = Math.floor(Math.random() *quotes.length);
+
+document.getElementById("quote").innerHTML = quotes[index];
+
+</script>
