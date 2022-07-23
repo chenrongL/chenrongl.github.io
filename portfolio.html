@@ -73,112 +73,36 @@
     <!--HEADER-->
     <h2><strong><a href="./CV2020.pdf">Download PDF CV</a></strong></h2>
     <div id="c-nav" class="post-nav">
-      <h2>Curriculum Vitae </h2>  <button onclick="toggleSection('c',this)" class="smooth-borders-full button" style="position:absolute;right:0px; font-size:20px;margin-top:12px;">Expand Section &nbsp;&nbsp;&nbsp;
+      <h2>Work Experience </h2>  <button onclick="toggleSection('c',this)" class="smooth-borders-full button" style="position:absolute;right:0px; font-size:20px;margin-top:12px;">Expand Section &nbsp;&nbsp;&nbsp;
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-down"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
       </button>
     </div>  
     <!--CONTENT-->
     <div id="c-content" style="display:none;">
       <div id='portfolio' class="portfolio">
-
-        <strong><a href="./CV2020.pdf">Download PDF CV</a></strong>
-  
-        <p class="grey p-section">
-        I am currently doing an honours year study at Auckland University, New Zealand.<br><br>
-        I have around 4 years of programming experience.<br><br>
-        I mostly program in Python, C++, Java, Javascript/Typescript, css/html.<br><br>                
-        I have 3 years of experience with developing deep learning models, I can implement algorithms/systems
-        and conduct research on reinforcement learning, computer vision, computer graphics, and
-        other 'fields'.<br><br>
-        I can learn quickly and I like to develop tools to make my work efficient.<br><br>
-
-        I am currently doing research in accelerating neuralnetworks with quantization/FPGA.<br><br>
-        I am also learning how to make robots.
-        I wish to eventually create practical, general helper robots to free ourselves from mundane work.<br><br>
-        </p>
-
         <strong class="a">Summer Student Research - Otago University Physics Department- 2018 Summer</strong>
         <p id='s0' class="grey truncate-readmore p-section">
-        I wrote a data manipulation tool for helping a researcher study the dynamics of climate simulations. The climate is 
-        a chaotic system so even if we knew a good model of the system, we still need to understand the model in order to
-        better compensate for the butterfly effect of the initial conditions leading to the final outcome. The tool was to
-        be used to slice some Tera bytes of simulation data according to certain criterias(certain month, year, for certain 
-        variables) so she could 'zoom in' to different parts of the simulation to see what is going on.<br><br>
-        It is essentially a GUI tool over netCDF-python.
-
-        This experience gave me more confidence in being able to write programs, and, in general confidence
-        in my own ability to learn. I also learned a bit more about how science works, and what scientists do.
-        <br><br>
+        wrote a GUI tool over netCDF-python.
         </p>
-
-        
-        <strong class="a">Iris Datascience Internship - Early 2019</strong>
+        <strong class="a">Iris Datascience (Internship) - Early 2019</strong>
         <p id='s1' class="grey truncate-readmore p-section">
-        I worked for a statistics consulting company as an intern working on some machine learning projects.
-        <br><br>
-        My first task was to adjust some data so they could be used for training machine learning models.
-        I was expected to do this by hand but I wrote python scripts to automate it. 
-        <br><br>
-        I worked on paddock quality prediction from images, apple yield prediction from certain variables,
-        and sheep face detection. <br><br>
-        During this time I learned to write computer programs better and had a deeper understanding of deep learning after
-        practical experimentations. I learnt a lot from Benoit, including the gradient boosting
-        technique.
-        I was offered to go back to work for the same company then and there for the company during the year.
+        Worked on paddock quality prediction from images, apple yield prediction from certain variables,
+        and sheep face detection.
         </p>
-
-        <strong class="s">Aule Limited - Dunedin NZ - 2020</strong>
+        <strong class="s">Aule Limited (Developer) - Dunedin NZ - 2020</strong>
         <p id='s2' class="grey truncate-readmore p-section">
-        I wanted some change, so I started working for a company developing web applications for a year.<br>
-
-        During this time I worked with three other colleagues and I was mainly responsible for the 'front-end'
-        developments, integrating to various endpoints with the database server. <br>
-
-        I began developing a tool to automate certain aspects of development,<br>
-        essentially being able to create templates that are suited to our needs to make forms, list view pages
-        etc much quicker. 
-        <br><br>
-        <br>
+        Front end development. Worked on tooling as well.
         </p>
-        
         <strong class="s">'Resistance' Climbing Gym Software - Early 2021</strong>
         <p id='s3'class="grey truncate-readmore p-section">
-        I was commissioned to build a full featured climbing gym management 
-        software with Angular frame work + Flask. The software has now been used for almost one year in 
-        Resistance Rock Climbing Gym, Dunedin, NZ. I built the software on my spare time while having a full time
-        internship at Soul Machines.<br><br>
-
-        You can see an early demo with the software here: <button onclick="document.location='https://www.youtube.com/watch?v=DRsP95XWMsk'">Link</button>
-        <br><br>
-        In addition, there is also an online waiver signing station which accompanies the software.
-        <button onclick="document.location='https://resistance-waiver-station.netlify.app/'">Link</button>
-
-        <br><br>
-        This experience taught me a lot about software engineering and project management.
-        <br>
+        Built a climbing gym management software.
         </p>
-
-        
-        <strong class="a"> Soul Machines Internship - Early 2021</strong>
+        <strong class="a"> Soul Machines (Internship) - Early 2021</strong>
           <p id='s4'class="grey truncate-readmore p-section">
-            I worked on automatic animation of 3D human gestures at the company Soul Machines. Specifically, I created a prototype system for 
-            automatic pointing animations. So given a target point, the skeleton would animate so to point to that point.<br><br>
-
-            Initially, people had been uploading files into auto desk maya to specify and visualize trajectories. I wrote a python script
-            to do this automatically through TCP/IP sockets. But auto desk does not run their python scripts multi-threaded so if there was some
-            trouble it will freeze, and things cannot be paused mid-way. So I wrote another visualizer based on Three.js that supports
-            multiple skeletons asynchrnously.<button onclick="document.location='https://www.youtube.com/watch?v=JU7bzOUU6Qc&feature=youtu.be'">Visualizer</button>
-
-            In the end of my internship I worked on understanding a recent paper called "Robust Motion Inbetweening". I did not implement it myself,
-            but I had a solid understanding of the method and was able to modify it to our needs. <br><br>
-
-            During this experience I learnt a lot on computer graphics, how artists work together with programmers to create things,
-            and I also gained a deeper understanding of machine learning, modeling, and deep learning in general through more practical experiments.
-            <br><br>
-
-            I was offered after the internship a 4 days a week semi full time position, but I didn't accept it, and went back to university to do
-            an honours year.
-            <br>
+            Worked on automatic animation from mocap data. 
+          </p>
+        <strong class="a"> Engineered Arts UK - Early 2022</strong>
+          <p id='s4'class="grey truncate-readmore p-section">
           </p>
       </div>    
       </div>
@@ -203,9 +127,6 @@
       <div class="left-box">
       <strong class="s">Open Gym</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
       <br>
-      Written with Python, Typescript,CSS/HTML(Angular 9 + Electron), Open Gym is the open sourced version of 
-      a rock climbing gym software which I wrote for 'Resistance Climbing Gym',Dunedin,New Zealand.
-      <br>
       <button class="github smooth-borders-full button" onclick="document.location='https://github.com/IpsumDominum/OpenGym'">Github</button>
       <button class="youtube smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=HsmKcJCs6X0'">&#9654; Youtube</button>
       </div>
@@ -223,14 +144,11 @@
       <div class="p-box">
       <!---->
       <div class="left-box">
-      <strong class="a">Facial Animation From Text And Single Photo</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
+      <strong class="a">Photo Avatar (based on FOMM and etc)</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
       <br>
-      Text driven talking avatars from one single photo. A mash up of several open source projects including Tacotron2, audio to face animation,
-      and 'First Order Motion Model for Image Animation'.
-      <br>
-      <button class="youtube smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=RfOZJ1IP9PM&t=271s'">&#9654; Youtube 1</button>
-      <button class="youtube smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=UrimMxBSmzc'">&#9654; Youtube 2</button>
-      <button class="smooth-borders-full button" onclick="document.location='chatbotAvatar2.pdf'">View Report</button>
+      <button class="youtube smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=415az1RHv38'">&#9654; Youtube 1</button>
+      <button class="youtube smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=sO3BxVFSp_8'">&#9654; Youtube 2</button>
+      
       </div>
       <!---->
       <div class="img-box">
@@ -247,14 +165,10 @@
       <div class="p-box">
       <!---->
       <div class="left-box">
-      <strong class="a">Implementing Wave Function Collapse Algorithm</strong>  &nbsp;&nbsp;&nbsp;&nbsp;  
-      <br>
-      A university project. This python implementation is designed to be easy to use,
-      modular, and 'fast'(faster than existing python implementations).
+      <strong class="a">Wave Function Collapse</strong>  &nbsp;&nbsp;&nbsp;&nbsp;  
       <br>
       <button class="github smooth-borders-full button" onclick="document.location='https://github.com/IpsumDominum/Wave-Function-Collapse-'">Github</button>
       <button class="youtube smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=GeBI9Bvo9oM'">&#9654; Youtube</button>
-      <button class="smooth-borders-full button" onclick="document.location='./Final_Report_COMPSCI715.pdf'">View Report</button>
       </div>
       <!---->
       <div class="img-box">
@@ -271,8 +185,6 @@
       <!---->
       <div class="left-box">
       <strong class="s">Inmoov Robot</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
-      <br>
-      Building the Inmoov open source robot. This project is incomplete. But It gave me hands on experience about 3D printing, mechanics, motors, electronics, and etc.
       <br>
       <button class="youtube smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=LFD5JWXM1uY'">&#9654; Youtube</button>
       </div>                  
@@ -292,10 +204,8 @@
       <div class="p-box">
       <!---->
       <div class="left-box">
-      <strong class="s">Robotic Arm Plays Arcade Machine From Camera Feed</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
+      <strong class="s">Robotic Arm vs Arcade Machine</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
       <br>
-      This project was never finished, it was meant to be an experiment on reinforcement learning algorithms dealing with natural latency/noise.
-      COVID 19 happened and I moved to a different house and forgot about this project.
       <button class="youtube smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=vy5H2xM5Eos'">&#9654; Youtube</button>
       </div>            
       <!---->
@@ -313,12 +223,8 @@
       <div class="p-box">
       <!---->
       <div class="left-box">
-      <strong class="a">Automatic Pointing Gesture Animation For Virtual Human Skeleton</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
+      <strong class="a">Pointing animation from mocap-data</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
       <br>
-      Project done in internship. I did 90%+ of the work and lead the project. I conducted experiments,wrote several auxillary software tools,
-      and created several solutions including with artificial neuralnetworks and tetrahedron interpolation schemes.
-      <br>
-      <button class="smooth-borders-full button" onclick="document.location='SM_Presentation.pdf'">View Report (Presentation)</button>
       </div>      
       <!---->
       <div class="img-box">
@@ -335,10 +241,7 @@
       <div class="p-box">
       <!---->
       <div class="left-box">
-      <strong class="a">Fake Make, Simple Multithreaded Make(C++)</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
-      <br>
-      An university assignment for parallel computing. It is essentially a simplified Make but runs in parallel considering
-      the make command dependencies.
+      <strong class="a">Fake Make, Simple Multithreaded Make</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
       <br>
       <button class="github smooth-borders-full button" onclick="document.location='https://github.com/IpsumDominum/FakeMake'">Github</button>
       </div>
@@ -357,9 +260,6 @@
       <!---->
       <div class="left-box">
       <strong class="a">Implementing the Neural Evolution via Augmenting Topologies(NEAT) Algorithm</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
-      <br>
-      Implementing NEAT based on the NEAT paper. Video demos the algorithm running on the Bipedal Walker task provided with 
-      Box2D - OpenAI Gym.
       <br>
       <button class="github smooth-borders-full button" onclick="document.location='https://github.com/IpsumDominum/Evolutionary-Algorithms/blob/master/NEAT/NEAT.py'">Github</button>
       <button class="youtube smooth-borders-full button" onclick="document.location='https://www.youtube.com/watch?v=ASTbp8GFyYs'">&#9654; Youtube</button>
@@ -380,13 +280,7 @@
       <div class="left-box">
       <strong class="a">Font Style Transfer For Historical Document Recognition</strong>  &nbsp;&nbsp;&nbsp;&nbsp;
       <br>
-      Another university project. I did 99% of all the programming, planning, theory, and lead the project, except for 
-      the bits on the Viterbi algorithm, which I did not contribute at all. The project is essentially experimenting with 
-      using an U-net structured convolutional neuralnetwork to transfer historical documents to clear text and then applying OCR to 
-      recognize it.
-      <br>
       <button class="github smooth-borders-full button" onclick="document.location='https://github.com/IpsumDominum/Is-Font-Style-Transfer-All-You-Need-For-Historical-Document-Recognition-'">Github</button>
-      <button class="smooth-borders-full button" onclick="document.location='Font_Style_Transfer_Is_All_You_Need__Copy_.pdf'">View Report</button>
       </div>
       <!---->
       <div class="img-box">
